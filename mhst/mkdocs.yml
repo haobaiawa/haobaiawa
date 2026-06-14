@@ -1,0 +1,65 @@
+site_name: "MHST"       # 站点名称，显示于导航栏
+site_url: "https://haobaiawa.github.io"  # 部署后的域名
+
+nav:                       # 导航栏菜单结构，层级与目录结构对应
+  - 首页: index.md
+  - 开始之前:
+    - 服务器选择: 开始之前/服务器选择.md
+    - 环境相关: 开始之前/环境相关.md
+
+theme:
+  name: material #主题
+  homepage: https://mhst.herra.fun  # 首页链接
+  features:
+    - navigation.tabs      # 顶部标签页导航
+    - navigation.sections  # 自动提取标题生成章节锚点
+    - navigation.top       # 顶部导航栏
+    - navigation.footer    # 页脚导航栏
+    - navigation.instant
+    - navigation.instant.progress
+    - search.suggest       # 搜索建议
+    - search.highlight     # 搜索结果高亮显示
+    - search.shared        # 搜索结果分享
+  palette:
+
+    # 自动模式的调色板切换
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 切换到明亮模式
+
+    # 明亮模式的调色板切换
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: 切换到黑暗模式
+
+    # 黑暗模式的调色板切换
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到系统偏好    # 切换到系统偏好模式
+  icon:
+    previous: fontawesome/solid/angle-left # 上一页图标
+    next: fontawesome/solid/angle-right    # 下一页图标
+plugins:
+  - search
+  - git-revision-date-localized
+
+extra:
+  consent:
+    title: Cookie 同意
+    description: >- 
+      我们使用cookies来识别您的重复访问和偏好，并衡量我们的文档的有效性以及用户是否找到了他们所搜索的内容。通过您的同意，您帮助我们改进我们的文档。
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/haobaiawa/haoabiwa
+      name: GitHub
+    - icon: octicons/mail-16
+      link: mailto:mail@herra.fun
+      name: Mail
+  generator: false
+copyright: Copyright &copy; 2026 <a href="https://studio.herra.fun">Herra Studio</a>. All rights reserved.  #版权声明
+repo_url: https://github.com/haobaiawa/haobaiawa  #公共仓库地址
